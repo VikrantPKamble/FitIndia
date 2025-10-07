@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exercise Library — FitHub</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-main">FitHub</span>
+        <span class="brand-sub">by FitIndia</span>
+      </a>
+
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="exercises.html">Exercises</a></li>
+          <li><a href="diets.html">Diet Plans</a></li>
+        </ul>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="exercises-hero">
+      <div class="container">
+        <h1>Exercise Library</h1>
+        <p class="muted">Search or filter by muscle group to quickly find the right exercises for your plan.</p>
+
+        <!-- Search & Filters -->
+        <div class="filter-row">
+          <input id="exercise-search" class="search-input" type="search" placeholder="Search exercises (e.g., squat, press)">
+          <div class="filter-buttons" role="tablist" aria-label="Filter by muscle group">
+            <button class="filter-btn active" data-muscle="all">All</button>
+            <button class="filter-btn" data-muscle="chest">Chest</button>
+            <button class="filter-btn" data-muscle="back">Back</button>
+            <button class="filter-btn" data-muscle="legs">Legs</button>
+            <button class="filter-btn" data-muscle="shoulders">Shoulders</button>
+            <button class="filter-btn" data-muscle="arms">Arms</button>
+            <button class="filter-btn" data-muscle="abs">Abs</button>
+          </div>
+        </div>
+
+        <!-- Exercise Grid -->
+        <div id="exercise-grid" class="exercise-grid">
+          <!-- Each card has data-muscle and inner instruction section -->
+          <article class="exercise-card" data-muscle="chest">
+            <div class="ex-thumb">🏋️‍♂️</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Barbell Bench Press</h3>
+              <p class="ex-muscle">Chest</p>
+              <ol class="ex-steps">
+                <li>Lie flat on bench, grip bar slightly wider than shoulder-width.</li>
+                <li>Lower bar to mid-chest under control, then press up to full extension.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="back">
+            <div class="ex-thumb">🏋️‍♀️</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Bent-Over Row</h3>
+              <p class="ex-muscle">Back</p>
+              <ol class="ex-steps">
+                <li>Hinge at hips with a flat back, pull bar to your lower chest/upper stomach.</li>
+                <li>Lower under control and repeat, squeeze shoulder blades each rep.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="legs">
+            <div class="ex-thumb">🦵</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Barbell Back Squat</h3>
+              <p class="ex-muscle">Legs</p>
+              <ol class="ex-steps">
+                <li>Position bar on upper traps, feet shoulder-width, chest up.</li>
+                <li>Drop hips back and down to parallel, drive through heels to stand.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="shoulders">
+            <div class="ex-thumb">🏋️</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Overhead Press</h3>
+              <p class="ex-muscle">Shoulders</p>
+              <ol class="ex-steps">
+                <li>Start with bar at clavicle level, press overhead while keeping core tight.</li>
+                <li>Lock out at top, then lower to start under control.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="arms">
+            <div class="ex-thumb">💪</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Dumbbell Biceps Curl</h3>
+              <p class="ex-muscle">Arms</p>
+              <ol class="ex-steps">
+                <li>Stand tall, curl weights with elbows fixed at sides.</li>
+                <li>Lower slowly to full extension.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="chest">
+            <div class="ex-thumb">🏋️</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Incline Dumbbell Press</h3>
+              <p class="ex-muscle">Chest</p>
+              <ol class="ex-steps">
+                <li>Set bench to ~30–45°, press dumbbells from chest to extension.</li>
+                <li>Lower under control focusing on upper chest contraction.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="back">
+            <div class="ex-thumb">🛶</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Lat Pulldown</h3>
+              <p class="ex-muscle">Back</p>
+              <ol class="ex-steps">
+                <li>Grip bar wide and pull to upper chest while leaning slightly back.</li>
+                <li>Control the bar as you return to full arm extension.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="legs">
+            <div class="ex-thumb">🏃</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Romanian Deadlift</h3>
+              <p class="ex-muscle">Legs / Hamstrings</p>
+              <ol class="ex-steps">
+                <li>Keep a slight knee bend, hinge at hips lowering the bar along thighs.</li>
+                <li>Drive hips forward to stand, focusing on hamstring stretch.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="shoulders">
+            <div class="ex-thumb">🔩</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Lateral Raise</h3>
+              <p class="ex-muscle">Shoulders</p>
+              <ol class="ex-steps">
+                <li>With light dumbbells, raise arms to the side to shoulder height.</li>
+                <li>Pause briefly then lower slowly.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="arms">
+            <div class="ex-thumb">🤜</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Triceps Dip</h3>
+              <p class="ex-muscle">Arms</p>
+              <ol class="ex-steps">
+                <li>Use parallel bars or bench, lower until elbows ~90° then push up.</li>
+                <li>Keep shoulders down and core engaged.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="abs">
+            <div class="ex-thumb">🧘</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Plank</h3>
+              <p class="ex-muscle">Abs</p>
+              <ol class="ex-steps">
+                <li>Maintain a straight line from head to heels on elbows or hands.</li>
+                <li>Hold for target duration while breathing steadily.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="legs">
+            <div class="ex-thumb">🏋️‍♂️</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Lunges</h3>
+              <p class="ex-muscle">Legs</p>
+              <ol class="ex-steps">
+                <li>Step forward, lower until both knees ~90°, push back to start.</li>
+                <li>Keep torso upright and weight on front heel.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="exercise-card" data-muscle="back">
+            <div class="ex-thumb">🧲</div>
+            <div class="ex-body">
+              <h3 class="ex-name">Seated Cable Row</h3>
+              <p class="ex-muscle">Back</p>
+              <ol class="ex-steps">
+                <li>Sit tall, pull handle to navel while squeezing shoulder blades.</li>
+                <li>Control the return and repeat.</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-2"></span> FitHub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
