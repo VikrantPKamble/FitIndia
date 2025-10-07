@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diet Plans — FitHub</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-main">FitHub</span>
+        <span class="brand-sub">by FitIndia</span>
+      </a>
+
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a class="active" href="diets.html">Diet Plans</a></li>
+        </ul>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="diets-hero">
+      <div class="container">
+        <h1>Diet Plans</h1>
+        <p class="muted">Sample one-day meal plans for common fitness goals. Tap a section to expand.</p>
+
+        <div class="accordion" id="diet-accordion">
+          <div class="accordion-item">
+            <button class="accordion-toggle" aria-expanded="false">Bulking (Muscle Gain)</button>
+            <div class="accordion-panel">
+              <h3>Sample One-Day Meal Plan</h3>
+              <ul>
+                <li><strong>Breakfast:</strong> 4 eggs (2 whole + 2 whites), oats with banana and peanut butter, Greek yogurt.</li>
+                <li><strong>Snack:</strong> Protein shake + a handful of mixed nuts.</li>
+                <li><strong>Lunch:</strong> Grilled chicken breast, brown rice, mixed vegetables, salad.</li>
+                <li><strong>Pre-Workout:</strong> Rice cake + honey or a small banana.</li>
+                <li><strong>Dinner:</strong> Salmon, sweet potato, steamed broccoli.</li>
+                <li><strong>Evening Snack:</strong> Cottage cheese or casein shake.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-toggle" aria-expanded="false">Cutting (Fat Loss)</button>
+            <div class="accordion-panel">
+              <h3>Sample One-Day Meal Plan</h3>
+              <ul>
+                <li><strong>Breakfast:</strong> Egg white omelette with spinach, tomatoes, and oats (small portion).</li>
+                <li><strong>Snack:</strong> Apple and a small handful of almonds.</li>
+                <li><strong>Lunch:</strong> Grilled turkey or chicken salad with lots of greens and a vinaigrette.</li>
+                <li><strong>Pre-Workout:</strong> Black coffee + a banana (if needed).</li>
+                <li><strong>Dinner:</strong> Baked white fish, large green salad, and steamed veggies.</li>
+                <li><strong>Evening Snack:</strong> Greek yogurt (unsweetened) or cottage cheese with cinnamon.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-toggle" aria-expanded="false">Maintenance</button>
+            <div class="accordion-panel">
+              <h3>Sample One-Day Meal Plan</h3>
+              <ul>
+                <li><strong>Breakfast:</strong> Whole eggs, wholegrain toast, fruit.</li>
+                <li><strong>Snack:</strong> Protein smoothie or Greek yogurt & berries.</li>
+                <li><strong>Lunch:</strong> Lean protein (chicken/fish), quinoa or brown rice, mixed vegetables.</li>
+                <li><strong>Snack:</strong> Hummus with carrot sticks.</li>
+                <li><strong>Dinner:</strong> Stir-fry with tofu or lean meat and mixed veggies.</li>
+                <li><strong>Evening Snack (optional):</strong> A small portion of nuts or a glass of milk.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <section id="pro-tips" class="pro-tips">
+          <h2>Pro Tips</h2>
+          <ul>
+            <li>Always prioritize whole foods and lean proteins.</li>
+            <li>Adjust portion sizes to match daily calorie needs.</li>
+            <li>Stay hydrated — water supports performance and recovery.</li>
+            <li>Supplements can help, but they don't replace good food (protein, creatine, multivitamin).</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year-3"></span> FitHub</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
