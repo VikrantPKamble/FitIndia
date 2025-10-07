@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitIndia — FitHub</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Meta -->
+  <meta name="description" content="FitHub: a clean, motivating fitness and gym guide with exercises and diet plans.">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-main">FitHub</span>
+        <span class="brand-sub">by FitIndia</span>
+      </a>
+
+      <nav id="main-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="exercises.html">Exercises</a></li>
+          <li><a href="diets.html">Diet Plans</a></li>
+        </ul>
+      </nav>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Build Your Ultimate Physique</h1>
+          <p>Smart workouts. Clean nutrition. Sustainable progress. FitHub puts practical gym plans and meals in one simple guide.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#features" id="get-started">Get Started</a>
+            <a class="btn btn-ghost" href="exercises.html">Browse Exercises</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <!-- simple decorative placeholder -->
+          <div class="art-card">
+            <div class="art-circle">🏋️</div>
+            <p class="art-caption">Train smart. Train consistent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">What You'll Find</h2>
+        <div class="card-grid">
+          <a class="feature-card" href="exercises.html">
+            <div class="card-icon">💪</div>
+            <h3>Exercise Library</h3>
+            <p>Step-by-step instructions for compound and isolation moves — perfect for beginners and experienced lifters.</p>
+            <span class="card-link">Explore →</span>
+          </a>
+
+          <a class="feature-card" href="diets.html">
+            <div class="card-icon">🥗</div>
+            <h3>Nutrition Guides</h3>
+            <p>Practical one-day sample meal plans for bulking, cutting and maintenance — balanced and easy to follow.</p>
+            <span class="card-link">View Plans →</span>
+          </a>
+
+          <a class="feature-card" href="diets.html#pro-tips">
+            <div class="card-icon">🧠</div>
+            <h3>Pro Tips</h3>
+            <p>Guidance on supplements, gym etiquette, recovery and program design to help you progress safely.</p>
+            <span class="card-link">Read Tips →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitHub. All rights reserved.</p>
+      <p class="small">Designed for GitHub Pages • Dark, responsive theme</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
